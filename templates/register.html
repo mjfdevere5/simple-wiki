@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+	<h2>register</h2>
+	<form method="post">
+		<table>
+			<tr>
+				<td>username</td>
+				<td><input type="text" name="username" value="{{username}}"></td>
+				<td class="error">{{error_username}}</td>
+			</tr>
+
+			<tr>
+				<td>password</td>
+				<td><input type="password" name="password"></td>
+				<td class="error">{{error_password}}</td>
+			</tr>
+
+			<tr>
+				<td>verify password</td>
+				<td><input type="password" name="verify"></td>
+				<td class="error">{{error_verify}}</td>
+			</tr>
+
+			<tr>
+				<td>email (optional)</td>
+				<td><input type="text" name="email" value="{{email}}"></td>
+				<td class="error">{{error_email}}</td>
+			</tr>
+		</table>
+
+		<input type="hidden" name="next_url" value="{{next_url}}" />
+		<input type="submit">
+	</form>
+{% endblock %}

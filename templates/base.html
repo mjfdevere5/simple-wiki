@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="/static/main.css"/>
+	<title>G O S S I P W I K I</title>
+</head>
+
+<body>
+	<div class="navbar actual bottomshadow">
+		<a href="/" id="site-title">GOSSIPWIKI</a>
+		<span id="navbar-controls">
+			{% if user %}
+				<span>
+					<a href="/_edit{{path}}">edit</a> | 
+					<a href="{{path}}">escape</a> | 
+					<a href="/_history{{path}}">history</a></span> ... 
+				<span>
+					<b>{{user}}</b> (<a href="/logout">logout</a>)</span>
+			{% else %}
+				<span>
+					<a href="/_edit{{path}}">edit</a> | 
+					<a href="/_history{{path}}">history</a></span> ... 
+				<span>
+					<a href="/login">login</a> | 
+					<a href="/signup">register</a></span>
+			{% endif %}
+		</span>
+	</div>
+	<div class="navbar space"></div>
+
+	{% block content %}
+	{% endblock %}
+
+</body>
+</html>

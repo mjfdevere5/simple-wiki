@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+	
+	<div class='page-content editing'>
+		<br>
+		<form method='post'>
+			<textarea name='content'>{{old_content}}</textarea>
+			<br>
+			<input type="submit">
+		</form>
+	</div>
+
+
+{% endblock %}

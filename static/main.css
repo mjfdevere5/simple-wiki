@@ -1,0 +1,98 @@
+html {
+
+}
+
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #1a1a1a;
+}
+
+p {
+	font-size: 14px;
+	line-height: 2px;
+}
+
+/*BASE.HTML*/
+
+.navbar {
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	margin: 0px;
+}
+
+.navbar.actual {
+	position: fixed;
+	padding: 10px 10px 10px 10px;
+	background-color: CornflowerBlue;
+	border-bottom: 1px solid Ivory;
+}
+
+.navbar.space {
+	height: 50px;
+	z-index: -1;
+}
+
+.bottomshadow {
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+#site-title {
+	color: Ivory;
+	font-weight: bold;
+	text-decoration: none;
+	letter-spacing: 3px;
+	/*position: relative;*/
+}
+
+#navbar-controls {
+	/*position: relative;*/
+	float: right;
+	font-size: 12px;
+}
+
+#navbar-controls a {
+	text-decoration: none;
+}
+
+/*WIKIPAGE.HTML*/
+
+.page-content {
+	min-width: 750px;
+	padding: 0px 25px 25px 25px;
+	width: 75%;
+	height: 100%;
+	border-width: 1px 1px 1px 1px;
+	border-style: dashed;
+	border-color: gray;
+	margin: 0px auto;
+}
+
+/*EDIT.HTML*/
+
+.editing textarea {
+	width: 750px;
+	height: 400px;
+}
+
+/*HISTORY.HTML*/
+
+table.history {
+	font-size: 14px;
+
+}
+
+table.history th, td {
+	padding: 7px 10px 10px 10px;
+}
+
+table.history th {
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-size: 90%;
+	border-bottom: 2px solid #111111;
+	text-align: left;
+}
+
